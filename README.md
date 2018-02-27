@@ -1,4 +1,4 @@
-# MVCORM
+# MVC ORM
 This is simple php code mvc with orm
 - MVC structure code follow by video at https://www.udemy.com/complete-php-mvc-tutorial/
 - ORM structure code follow by article at https://catchmetech.com/en/post/94/how-to-create-an-orm-framework-in-pure-php
