@@ -8,3 +8,8 @@ This is simple php code mvc with orm
 2. App class call Router to route for controller, action (method in controller)
 3. App class get data from controller after action excute and pass for view to get content of html and data.
 4. Final, App class pass content to layout for display on website.
+
+## Demo Run
+You can test demo by check at:
+- View all user: http://app.nguyenvanquan7826.com/mvcorm/users/
+- View detail user with id = 21: http://app.nguyenvanquan7826.com/mvcorm/users/view/21
