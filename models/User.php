@@ -6,6 +6,7 @@ class User extends Model {
 
     // only public fields will mapper with columns in data table
     public $id;
+    public $name;
     public $email;
     public $password;
 

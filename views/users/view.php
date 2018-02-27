@@ -1,6 +1,9 @@
 <?php
-$user = $data['content'];
-if($user instanceof User){
-    echo 'ID: '.$user->id . BR;
-    echo 'Email: '.$user->email . BR;
+if ($data['content'] instanceof User) {
+    $user = $data['content'];
+    echo 'Id: ' . $user->id . BR;
+    echo 'Name: ' . $user->name . BR;
+    echo 'Email: ' . $user->email . BR;
+} else {
+    echo $data['content'];
 }
