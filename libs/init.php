@@ -12,10 +12,10 @@ if (Config::DEBUG) {
  * @throws Exception
  */
 function __autoload($className) {
-    $fileName =$className.'.php';
-    $libPath = ROOT.DS.'libs'.DS.$fileName;
-    $controllerPath = ROOT.DS.'controllers'.DS.$fileName;
-    $modelPath = ROOT.DS.'models'.DS.$fileName;
+    $fileName = $className . '.php';
+    $libPath = ROOT . DS . 'libs' . DS . $fileName;
+    $controllerPath = ROOT . DS . 'controllers' . DS . $fileName;
+    $modelPath = ROOT . DS . 'models' . DS . $fileName;
 
     if (file_exists($libPath)) {
         require_once($libPath);
@@ -29,4 +29,12 @@ function __autoload($className) {
         echo $modelPath . BR;
         throw new Exception("Fail to include class: $className");
     }
+}
+
+function url($str) {
+    echo getUrl($str);
+}
+
+function getUrl($str) {
+    return HOME_URL . $str;
 }

@@ -19,4 +19,21 @@ class UsersController extends Controller {
             $this->data['content'] = 'Please add user id to view user';
         }
     }
+
+    public function register() {
+        $this->data['saved'] = false;
+        if ($_POST) {
+            if (!isset($_POST['name']) || !isset($_POST['email']) || !isset($_POST['password'])) {
+                return false;
+            }
+            $result = User::create([
+                'name' => $_POST['name'],
+                'email' => $_POST['email'],
+                'password' => $_POST['password'],
+            ]);
+            if ($result) {
+                $this->data['saved'] = 'Register success';
+            }
+        }
+    }
 }

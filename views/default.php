@@ -11,13 +11,23 @@
 </head>
 <body>
 
-<h2>HEADER HERE</h2>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="#">MVC ORM</a>
 
-<div style="background-color: aliceblue">
-    <!--content key get from App class by layoutObject-->
-    <?= $data['content'] ?>
+    <!-- Links -->
+    <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="<?= HOME_URL ?>">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="<?php url('/users/register') ?>">Register</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div style="margin: 20px;">
+        <!--content key get from App class by layoutObject-->
+        <?= $data['content'] ?>
+    </div>
 </div>
 
-<h2>FOOTER HERE</h2>
 </body>
 </html>
