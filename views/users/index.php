@@ -7,7 +7,7 @@
     <tbody>
     <?php foreach ($data['content'] as $user): ?>
         <tr>
-            <td><a href="<?php url('users/view/' . $user->id) ?>"></a><?= $user->id ?></td>
+            <td><a href="<?php url('/users/view/' . $user->id) ?>"><?= $user->id ?></a></td>
             <td><?= $user->name ?></td>
             <td><?= $user->email ?></td>
         </tr>
