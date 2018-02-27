@@ -13,3 +13,4 @@ This is simple php code mvc with orm
 You can test demo by check at:
 - View all user: http://app.nguyenvanquan7826.com/mvcorm
 - View detail user with id = 1: http://app.nguyenvanquan7826.com/mvcorm/users/view/1
+- Register user: http://app.nguyenvanquan7826.com/mvcorm/users/register
