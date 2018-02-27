@@ -12,4 +12,4 @@ This is simple php code mvc with orm
 ## Demo Run
 You can test demo by check at:
 - View all user: http://app.nguyenvanquan7826.com/mvcorm/users/
-- View detail user with id = 21: http://app.nguyenvanquan7826.com/mvcorm/users/view/21
+- View detail user with id = 1: http://app.nguyenvanquan7826.com/mvcorm/users/view/1
